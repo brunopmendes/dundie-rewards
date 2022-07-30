@@ -5,5 +5,10 @@ setup(
     name="dundie",
     version="0.1.0",
     description="Reward Point System for Dunder Mifflin",
-    packages=find_packages() #tudo com __init__ é considerado um pacote
+    packages=find_packages(), #tudo com __init__ é considerado um pacote
+    entry_points={
+        "console_scripts": [
+            "dundie = dundie.__main__:main"
+        ]
+    }
 )
